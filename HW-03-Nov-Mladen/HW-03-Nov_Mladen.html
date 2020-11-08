@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders Without Borders | DOM manupulation 2</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .title {
+            background-color: antiquewhite;
+            width: 50%;
+            color: indigo;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .voting {
+            background-color: #e4fd55;
+            width: 50%;
+            color: #000;
+            margin: 20px auto;
+            padding: 50px 20px;
+        }
+
+        #choice {
+            margin: 10px 50px;
+            line-height: 2em;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 20px auto;
+            background-color: royalblue;
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 200px;
+            height: 30px;
+            color: #fff;
+        }
+
+        #trump {
+            font-family: 'Times New Roman', Times, serif;
+            color: red;
+            font-size: 2em;
+        }
+
+        #biden {
+            font-family: 'Times New Roman', Times, serif;
+            color: blue;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h3>Lecturer: Mladen</h3>
+        <h3>Date: 03 November 2020</h3>
+        <h2>DOM manupulation - Part 2</h2>
+    </div>
+    <div class="voting">
+        <h3>Who is your favourite President for the United States</h3>
+        <div id="choice">
+            <input type="radio" name="rbutton" value="Republican Party nominee: Donald John Trump">
+            <label for="trump">DONALD TRUMP</label><br>
+            <input type="radio" name="rbutton" value="Democratic Party nominee: Joseph Robinette Biden Jr.">
+            <label for="baiden">JOE BIDEN</label><br>
+            <button onclick="electionPoll()">Choose</button>
+            <br>
+        </div>
+    </div>
+
+
+    <div>
+        <h1 id="trump"></h1>
+        <h1 id="biden"></h1>
+    </div>
+
+
+
+
+
+
+
+    <script src="HW-03-Nov_Mladen.js"></script>
+</body>
+
+</html>
